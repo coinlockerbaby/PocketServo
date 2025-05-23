@@ -1,0 +1,303 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="rtwreport.css" /><script language="JavaScript" type="text/javascript">function rtwTableShrink(o) {var t = o.nextSibling;if (t.nodeType != 1) {t = t.nextSibling;}if (t.style.display == "none") {t.style.display = "";o.innerHTML = "[-]"} else {t.style.display = "none";o.innerHTML = "[+] ... "}}</script><script>function postParentWindowMessage(message) {window.parent.postMessage(message, "*");}</script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>
+theta_gen 的代码接口报告
+</title>
+
+</head>
+<body>
+<h1>
+theta_gen 的代码接口报告
+</h1>
+<h3>
+目录
+</h3>
+<ul>
+<li>
+<a href="#sec_入口函数">
+入口函数
+</a>
+
+</li>
+<li>
+<a href="#sec_输入端口">
+输入端口
+</a>
+
+</li>
+<li>
+<a href="#sec_输出端口">
+输出端口
+</a>
+
+</li>
+<li>
+<a href="#sec_接口参数">
+接口参数
+</a>
+
+</li>
+<li>
+<a href="#sec_数据存储">
+数据存储
+</a>
+
+</li>
+
+</ul>
+<h3>
+<a name="sec_入口函数">
+入口函数
+</a>
+
+</h3>
+<p>
+函数: <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'theta_gen_initialize'})">theta_gen_initialize</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+原型
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void theta_gen_initialize(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+描述
+</td>
+<td width="75%" align="left" valign="top">
+生成代码的初始化入口函数
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+定时
+</td>
+<td width="75%" align="left" valign="top">
+只能调用一次
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+参数
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+返回值
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+头文件
+</td>
+<td width="75%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'theta_gen.h'})">theta_gen.h</a>
+</td>
+
+</tr>
+
+</table>
+<p>
+函数: <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'theta_gen_step'})">theta_gen_step</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+原型
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void theta_gen_step(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+描述
+</td>
+<td width="75%" align="left" valign="top">
+生成代码的输出入口函数
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+定时
+</td>
+<td width="75%" align="left" valign="top">
+必须周期性调用，每 1e-05 秒调用一次
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+参数
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+返回值
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+头文件
+</td>
+<td width="75%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'theta_gen.h'})">theta_gen.h</a>
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_输入端口">
+输入端口
+</a>
+
+</h3>
+<table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+模块名称
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+代码标识符
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+数据类型
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+维度
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;Root&gt;/freq
+</td>
+<td width="26%" align="left" valign="top">
+rtU.freq
+</td>
+<td width="21%" align="left" valign="top">
+float
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_输出端口">
+输出端口
+</a>
+
+</h3>
+<table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+模块名称
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+代码标识符
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+数据类型
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+维度
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;Root&gt;/theta
+</td>
+<td width="26%" align="left" valign="top">
+rtY.theta
+</td>
+<td width="21%" align="left" valign="top">
+float
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_接口参数">
+接口参数
+</a>
+
+</h3>
+<p>
+模型中没有接口/可调参数。
+</p>
+<h3>
+<a name="sec_数据存储">
+数据存储
+</a>
+
+</h3>
+<p>
+模型中没有数据存储；请注意，此报告仅列出具有非自动存储类和全局数据存储的数据存储
+</p>
+
+</body>
+
+</html>

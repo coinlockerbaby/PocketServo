@@ -1,0 +1,54 @@
+# STM32 Keil MDK-ARM 项目的.gitignore
+
+# MDK-ARM 编译输出文件
+MDK-ARM/**/Objects/
+MDK-ARM/**/Listings/
+MDK-ARM/**/*.o
+MDK-ARM/**/*.d
+MDK-ARM/**/*.crf
+MDK-ARM/**/*.lst
+MDK-ARM/**/*.map
+MDK-ARM/**/*.dep
+MDK-ARM/**/*.lnp
+MDK-ARM/**/*.htm
+MDK-ARM/**/*.axf
+MDK-ARM/**/*.bin
+MDK-ARM/**/*.hex
+MDK-ARM/**/*.build_log.htm
+
+# Keil MDK-ARM 自动生成文件
+*.scvd
+*.uvguix.*
+*.uvgui.*
+JLinkLog.txt
+JLinkSettings.ini
+
+# 编译输出目录和文件
+MDK-ARM/Template/
+build/
+Debug/
+Release/
+*.sct
+*.tmp
+*.TMP
+
+# 临时文件
+*.swp
+*~
+*.bak
+*.log
+
+# 系统相关文件
+.DS_Store
+Thumbs.db
+
+# VSCode相关文件（如需要）
+.vscode/ipch/
+.vscode/*.json
+
+# 其他可能的编译输出
+*.out
+*.exe
+*.dll
+*.so
+*.dylib 

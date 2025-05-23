@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 12">
+    <defs>
+        <style>
+            .a{fill:#a0a0a0;}
+        </style>
+    </defs>
+    <circle class="a" cx="5.5" cy="7.25" r="1.25"/>
+    <circle class="a" cx="9.5" cy="7.25" r="1.25"/>
+    <circle class="a" cx="13.5" cy="7.25" r="1.25"/>
+</svg>

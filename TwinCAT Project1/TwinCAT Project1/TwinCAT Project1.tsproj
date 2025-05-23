@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.50">
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c30e0000c30e0000000000000000000071d9a750d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09255d09258433a50d06850d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d0925b9b92556200606268509b3a50d09250d09253d092604352602000602000537f2150d09250d09250d09250d09250d0925b9b9255620058b59258432150d07d50d0925d7f7d58430050d07d55d0925d203a50b55250d09250d09250d09250d0925b9b9255620053d0925d435250b55250d092606268537f2150d09250d092606268537f2150d09250d09250d09250d0925b9b9255620050d0925b9b9255620050d09260626855620050d09253d092604352509b3a50d09250d09250d09250d0925b9b9255620050d09255d0925b203a50d06855b59260203a5b62215d433a58430050d07d50d09250d09250d09250d09250d09250d07d50d09250d09253d09250d09250d09253d092559b7d539b6850d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09271d9a750d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d09250d092</ImageData>
+	</ImageDatas>
+	<Project ProjectGUID="{AA6F5BDE-765A-4C28-A01A-BD0998CD3988}" Target64Bit="true" ShowHideConfigurations="#x6">
+		<System>
+			<Tasks>
+				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
+					<Name>PlcTask</Name>
+				</Task>
+			</Tasks>
+		</System>
+		<Plc>
+			<Project GUID="{28C1C168-6B44-4DFE-8D10-9E99EAD5BE37}" Name="PLC_Template" PrjFilePath="PLC_Template\PLC_Template.plcproj" TmcFilePath="PLC_Template\PLC_Template.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC_Template\PLC_Template.tmc" TmcHash="{40604170-BD02-FEB7-E459-1715D7DB9608}">
+					<Name>PLC_Template Instance</Name>
+					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<Vars VarGrpType="2" AreaNo="1">
+						<Name>PlcTask Outputs</Name>
+						<Var>
+							<Name>MAIN.LED_OUT</Name>
+							<Type>USINT</Type>
+						</Var>
+					</Vars>
+					<UnrestoredVarLinks ImportTime="2025-04-18T22:31:20">
+						<OwnerA Name="OutputSrc" Prefix="TIPC^PLC_Template^PLC_Template Instance" Type="2">
+							<OwnerB Name="TIID^Device 4 (EtherCAT)^Box 1 (DPort-ECT)">
+								<Link VarA="MAIN.LED1" TypeA="USINT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="PDOChannel process data mapping^LED1" RestoreInfo="ANotFound"/>
+							</OwnerB>
+						</OwnerA>
+					</UnrestoredVarLinks>
+					<Contexts>
+						<Context>
+							<Id>0</Id>
+							<Name>PlcTask</Name>
+							<ManualConfig>
+								<OTCID>#x02010030</OTCID>
+							</ManualConfig>
+							<Priority>20</Priority>
+							<CycleTime>10000000</CycleTime>
+						</Context>
+					</Contexts>
+					<TaskPouOids>
+						<TaskPouOid Prio="20" OTCID="#x08502001"/>
+					</TaskPouOids>
+				</Instance>
+			</Project>
+		</Plc>
+		<Io>
+			<Device Id="4" DevType="111" DevFlags="#x0003" AmsPort="28676" AmsNetId="10.110.168.240.5.1" RemoteName="Device 4 (EtherCAT)" InfoImageId="4">
+				<Name>Device 4 (EtherCAT)</Name>
+				<AddressInfo>
+					<Pnp>
+						<DeviceDesc>ÒÔÌ«Íø (Realtek Gaming GbE Family Controller)</DeviceDesc>
+						<DeviceName>\DEVICE\{84884EB7-94F4-425F-8286-7BFCA4702458}</DeviceName>
+						<DeviceData>b4f18c43ae6a</DeviceData>
+					</Pnp>
+				</AddressInfo>
+				<Image Id="3" AddrType="9" ImageType="3">
+					<Name>Image</Name>
+				</Image>
+				<Box Id="1" BoxType="9099" BoxFlags="#x00000020">
+					<Name>Box 1 (DPort-ECT)</Name>
+					<ImageId>1000</ImageId>
+					<EtherCAT SlaveType="2" PdiType="#x0c05" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="35" VendorId="#x00000111" ProductCode="#x00000001" RevisionNo="#x00000001" InfoDataAddr="true" TimeoutStateChange1="2000" TimeoutStateChange2="9000" TimeoutMailbox2="2000" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="DPort-ECT" Desc="DPort-ECT" PortABoxInfo="#x00ffffff">
+						<SyncMan>001080002600010001000000240080008000001026010000</SyncMan>
+						<SyncMan>801080002200010002000000240080008000801022010000</SyncMan>
+						<SyncMan>001101006400010003000000000000000100001164010000</SyncMan>
+						<SyncMan>001404002000010004000000000000000400001420010000</SyncMan>
+						<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+						<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+						<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+						<DcMode>53796e6368726f6e0000000000000000534d2d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000</DcMode>
+						<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+						<Pdo Name="PDIChannel process data mapping" Index="#x1a00" Flags="#x0011" SyncMan="3">
+							<Entry Name="Pos" Index="#x6000" Sub="#x01">
+								<Type>REAL</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="PDOChannel process data mapping" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="2">
+							<Entry Name="LED1" Index="#x7000" Sub="#x01">
+								<Type>USINT</Type>
+							</Entry>
+						</Pdo>
+						<CoeProfile ProfileNo="5001"/>
+					</EtherCAT>
+				</Box>
+				<EtherCAT/>
+			</Device>
+		</Io>
+	</Project>
+	<Mappings>
+		<OwnerA Name="TIPC^PLC_Template^PLC_Template Instance">
+			<OwnerB Name="TIID^Device 4 (EtherCAT)^Box 1 (DPort-ECT)">
+				<Link VarA="PlcTask Outputs^MAIN.LED_OUT" VarB="PDOChannel process data mapping^LED1"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
+</TcSmProject>

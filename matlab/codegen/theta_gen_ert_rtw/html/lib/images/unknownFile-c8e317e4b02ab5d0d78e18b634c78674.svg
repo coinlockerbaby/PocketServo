@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.9;fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:url(#SVGID_2_);}
+</style>
+<g>
+	<g>
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="12.5" y1="24" x2="12.5" y2="-2.019078e-10">
+			<stop  offset="0" style="stop-color:#6A6A6A"/>
+			<stop  offset="0.2862" style="stop-color:#7F7F7F"/>
+			<stop  offset="0.8834" style="stop-color:#A6A6A6"/>
+		</linearGradient>
+		<path class="st0" d="M22,5l-5-5H3v24h19V5z"/>
+		<g>
+			<g>
+				<polygon class="st1" points="21,5 17,1 17,5 				"/>
+			</g>
+		</g>
+		
+			<radialGradient id="SVGID_2_" cx="-761.0733" cy="-21.8991" r="75.5407" fx="-761.7562" fy="-43.511" gradientTransform="matrix(0.4708 0 0 0.4708 362.3065 14.3085)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0.3753" style="stop-color:#FFFFFF"/>
+			<stop  offset="0.4782" style="stop-color:#F9FAFC"/>
+			<stop  offset="0.6164" style="stop-color:#E8EEF2"/>
+			<stop  offset="0.7747" style="stop-color:#CCD9E2"/>
+			<stop  offset="0.9468" style="stop-color:#A5BCCC"/>
+			<stop  offset="0.9509" style="stop-color:#A4BBCB"/>
+		</radialGradient>
+		<polygon class="st2" points="4,23 4,1 16,1 16,6 21,6 21,23 		"/>
+	</g>
+</g>
+</svg>

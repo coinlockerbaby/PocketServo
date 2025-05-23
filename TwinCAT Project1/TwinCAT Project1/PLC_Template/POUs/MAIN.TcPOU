@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{dbfda4ee-6e90-4789-a0e3-00b2a5fa24b9}" SpecialFunc="None">
+    <Declaration><![CDATA[// 定义程序结构
+PROGRAM MAIN
+VAR
+    TimerOn : TON; // 定时器，用于控制LED亮3秒
+    TimerOff : TON; // 定时器，用于控制LED灭3秒
+    LED : BOOL := FALSE; // LED状态变量，初始为关闭
+	LED_OUT AT %Q*: USINT;
+	OnTime : TIME := T#500MS; // LED亮的时间，设置为3秒
+    OffTime : TIME := T#500MS; // LED灭的时间，设置为3秒
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// 程序逻辑
+// 控制LED亮3秒
+TimerOn(IN := LED AND NOT TimerOn.Q, PT := OnTime); // 当LED为TRUE且TimerOn未完成时启动
+IF TimerOn.Q THEN
+    LED := FALSE; // 当TimerOn完成时，切换LED状态为FALSE
+END_IF;
+
+// 控制LED灭3秒
+TimerOff(IN := NOT LED AND NOT TimerOff.Q, PT := OffTime); // 当LED为FALSE且TimerOff未完成时启动
+IF TimerOff.Q THEN
+    LED := TRUE; // 当TimerOff完成时，切换LED状态为TRUE
+END_IF;
+
+// 根据LED状态设置LED_OUT的值
+IF LED THEN
+    LED_OUT := 1;   // LED亮
+ELSE 
+    LED_OUT := 0;   // LED灭
+END_IF]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="103" Count="17" />
+      <LineId Id="82" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

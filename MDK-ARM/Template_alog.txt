@@ -1,0 +1,23 @@
+[project_search_path]: ./
+[map_search_path]: ./
+[project_file_path]: .//Template.uvprojx
+[ map_file_path]: .//Template/Template.map
+[parse_keil_map start]: 
+[Found keyword]: ----------Execution Region----------
+[name]:  ER_IROM1 
+[Exec base]: 0x8000000
+[Size]: 0x13c98
+[Max]: 0x80000
+[Found keyword]: ----------Execution Region----------
+[name]:  RW_IRAM1 
+[Exec base]: 0x20000000
+[Size]: 0xb0a8
+[Max]: 0x20000
+[parse_keil_map over printf bar]: 
+  RW_IRAM1 :0x20000000
+  128.00 KB :|¡ö¡ö¡ö¡ö¡ö¡ö______________|   34.50 % (   44.16 KB /   128.00 KB) [85848 B]
+  ER_IROM1 :0x8000000
+  512.00 KB :|¡ö¡ö¡ö_________________|   15.46 % (   79.15 KB /   512.00 KB) [443240 B]
+[export csv]: ./Template_sort_by_flash.csv
+[export csv]: ./Template_sort_by_ram.csv
+[export xlsx]: Template_analysis.xlsx

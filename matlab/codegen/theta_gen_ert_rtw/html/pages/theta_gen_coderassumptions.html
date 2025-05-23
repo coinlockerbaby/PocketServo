@@ -1,0 +1,237 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="rtwreport.css" /><title>
+'theta_gen' 的代码生成器假设
+</title>
+
+</head>
+<body onload="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdCoderAssumptionsPage'); else local_onload();}} catch(err) {};">
+<h1>
+'theta_gen' 的代码生成器假设
+</h1>
+<div>
+<p>
+您可以检查的假设列表和所选目标环境的预期结果。有关详细信息，请参阅<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'helpview(fullfile(docroot,\'toolbox\',\'ecoder\',\'helptargets.map\'),\'verif_of_code_generation_assumptions\')'})" >代码生成假设的验证</a>。
+</p>
+</div>
+<div id="table_of_contents">
+
+</div>
+<h3 name="sec_ARM_Compatible->ARM_Cortex-M_目标硬件的_C_语言配置" id="sec_target_hardware">
+ARM Compatible->ARM Cortex-M 目标硬件的 C 语言配置
+</h3>
+<table width="100%" border="0">
+<tr>
+<td align="left" valign="top">
+<p>
+<table class="AltRow" cellspacing="0">
+<tr class="even">
+<td align="left" valign="top">
+BitPerChar
+</td>
+<td align="left" valign="top">
+8
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+BitPerShort
+</td>
+<td align="left" valign="top">
+16
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+BitPerInt
+</td>
+<td align="left" valign="top">
+32
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+BitPerLong
+</td>
+<td align="left" valign="top">
+32
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+BitPerFloat
+</td>
+<td align="left" valign="top">
+32
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+BitPerDouble
+</td>
+<td align="left" valign="top">
+64
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+BitPerPointer
+</td>
+<td align="left" valign="top">
+32
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+BitPerSizeT
+</td>
+<td align="left" valign="top">
+32
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+BitPerPtrDiffT
+</td>
+<td align="left" valign="top">
+32
+</td>
+
+</tr>
+
+</table>
+<br /><table class="AltRow" cellspacing="0">
+<tr class="even">
+<td align="left" valign="top">
+端序
+</td>
+<td align="left" valign="top">
+LittleEndian
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+有符号整数的右移是算术移位。
+</td>
+<td align="left" valign="top">
+True
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+有符号整数除法舍入方式
+</td>
+<td align="left" valign="top">
+Zero
+</td>
+
+</tr>
+
+</table>
+
+</p>
+
+</td>
+
+</tr>
+
+</table>
+<h3 name="sec_C_语言标准" id="sec_lang_standard">
+C 语言标准
+</h3>
+<table width="100%" border="0">
+<tr>
+<td align="left" valign="top">
+<p>
+零初始化代码已针对模型 'theta_gen' 进行优化。
+</p>
+<p>
+<table class="AltRow" cellspacing="0">
+<tr class="even">
+<td align="left" valign="top">
+全局整数变量的初始值为零。
+</td>
+<td align="left" valign="top">
+True
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+动态分配的 int 数组的每个元素的初始值为零。
+</td>
+<td align="left" valign="top">
+True
+</td>
+
+</tr>
+
+</table>
+
+</p>
+<p>
+如果假设不正确，请使用<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'rtw.report.CoderAssumptions.showMemZeroInitParams(\'theta_gen\')'})" >配置参数 > 代码生成 > 优化</a>设置删除优化。或者，配置目标环境以保持假设。
+</p>
+
+</td>
+
+</tr>
+
+</table>
+<h3 name="sec_浮点数" id="sec_floating_point_num">
+浮点数
+</h3>
+<table width="100%" border="0">
+<tr>
+<td align="left" valign="top">
+<p>
+代码生成配置为支持浮点数。目标环境可能会执行次正规数计算。
+</p>
+<p>
+<table class="AltRow" cellspacing="0">
+<tr class="even">
+<td align="left" valign="top">
+将计算出的次正规值的值下溢为零(FTZ)。
+</td>
+<td align="left" valign="top">
+False
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+将传入的次正规值下溢为零(DAZ)。
+</td>
+<td align="left" valign="top">
+False
+</td>
+
+</tr>
+
+</table>
+
+</p>
+<p>
+如果假设不正确，次正规数可能导致模型和生成的代码仿真结果不匹配。有关详细信息，请参阅<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'helpview(fullfile(docroot,\'toolbox\',\'ecoder\',\'helptargets.map\'),\'subnormal_numbers_performance\')'})" >次正规数性能</a>。
+</p>
+
+</td>
+
+</tr>
+
+</table>
+
+<script>function postParentWindowMessage(message) {window.parent.postMessage(message, "*");}</script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!-- Copyright 2017 The MathWorks, Inc. -->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+    <defs>
+        <style>.cls-1{opacity:0;}.cls-2{fill:#c2b59b;}.cls-3{fill:#3f3f3f;}</style>
+    </defs>
+    <title>drop-down_12</title>
+    <g id="Layer_2" data-name="Layer 2" transform='rotate(270 6 6)'>
+        <g id="Icons">
+            <g id="table_button">
+                <g id="Icons-2" data-name="Icons">
+                    <g id="down">
+                        <g id="Areas" class="cls-1">
+                            <rect class="cls-2" width="12" height="12"/>
+                        </g>
+                        <polygon id="_Path_" data-name="&lt;Path&gt;" class="cls-3"
+                                 points="6 8 2 4 10 4 6 8"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

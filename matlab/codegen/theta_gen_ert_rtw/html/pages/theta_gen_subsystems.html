@@ -1,0 +1,129 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="rtwreport.css" /><script language="JavaScript" type="text/javascript" src="rtwshrink.js"></script><title>
+theta_gen 中的非虚拟子系统
+</title>
+
+</head>
+<body onload="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdSubsystem'); else local_onload();}} catch(err) {};">
+<h1>
+theta_gen 中的非虚拟子系统
+</h1>
+<div>
+
+</div>
+<div id="table_of_contents">
+
+</div>
+<h3 name="sec_代码映射" id="sec_code_mapping">
+1. 代码映射 <span title="Click to shrink or expand section" style="cursor:pointer;font-weight:normal;" id="rtwIdSubsystem_table_001_control" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, 'rtwIdSubsystem_table_001', false)"><span class="shrink-button">[<u>hide</u>]</span></span>
+</h3>
+<table width="100%" name="rtwIdSubsystem_table_001" id="rtwIdSubsystem_table_001" border="0">
+<tr>
+<td align="left" valign="top">
+<p>
+此表: <br /><ul>
+<li>
+提供从模型中的非虚拟子系统到生成代码中的函数或可重用函数的映射。该表
+</li>
+<li>
+记录导致非虚拟子系统不重用代码的异常，即使它们的函数打包设置(子系统模块对话框上的 '函数打包' 条目)被指定为 '自动' 或 '可重用函数' 也是如此。
+</li>
+
+</ul>
+
+</p>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th align="left" valign="top">
+<b>
+子系统
+</b>
+
+</th>
+<th align="left" valign="top">
+<b>
+重用设置
+</b>
+
+</th>
+<th align="left" valign="top">
+<b>
+重用结果
+</b>
+
+</th>
+<th align="left" valign="top">
+<b>
+结果诊断
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S1&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+<h3 name="sec_代码重用异常" id="sec_reuse_exception">
+2. 代码重用异常 <span title="Click to shrink or expand section" style="cursor:pointer;font-weight:normal;" id="rtwIdSubsystem_table_002_control" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, 'rtwIdSubsystem_table_002', false)"><span class="shrink-button">[<u>hide</u>]</span></span>
+</h3>
+<table width="100%" name="rtwIdSubsystem_table_002" id="rtwIdSubsystem_table_002" border="0">
+<tr>
+<td align="left" valign="top">
+<p>
+本节提供在非虚拟子系统的函数打包设置为以下项的情况下导致子系统出问题的每个异常的详细信息<br /><ul>
+<li>
+'自动' - 导致生成内联代码段，
+</li>
+<li>
+'自动' - 导致生成不带参数的不可重用函数，或
+</li>
+<li>
+'可重用函数' - 导致生成不带参数的不可重用函数。
+</li>
+
+</ul>
+<b>注意:</b>本节不报告图上带有相同 'Auto' 标记， 只因功能属性(如维度、数据类型、工作向量、参数等)的差异 而未重用的 非虚拟子系统。在这种情况下， 您可以通过检查模型中或内联生成代码中 子系统功能属性的差异来确定 不重用的原因。
+</p>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<br /><b>模型中不存在重用异常。</b>
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
