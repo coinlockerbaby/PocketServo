@@ -8,13 +8,13 @@
 **🌟是一个FOC开发板也是一个EtherCAT从站开发板，体积小巧成本超低**
 PocketServo 是一个基于 STM32G474RET6 微控制器的高性能FOC伺服驱动项目。该项目采用模块化设计，实现了完整的电机控制系统，包括电机参数配置、自动校准、多种控制模式、实时监控及调试功能。
     
-[📺 B站视频](https://www.bilibili.com/video/BV1PZJpzrERm/) | [💻 源码仓库](https://oshwhub.com/flose/pocketservo) | [🐧 QQ交流群](https://qm.qq.com/q/nPpUbjPaXm) (群号：195646621)    
+[📺 B站视频](https://www.bilibili.com/video/BV1PZJpzrERm/) | [💻 源码仓库](https://github.com/coinlockerbaby/PocketServo) | [🐧 QQ交流群](https://qm.qq.com/q/nPpUbjPaXm) (群号：195646621)    
     
 </div>
 
-<img src="https://image.lceda.cn/oshwhub/pullImage/768016556b2e497498cdf81a306bdae9.png" width="70%">
+<img src="https://image.lceda.cn/oshwhub/pullImage/768016556b2e497498cdf81a306bdae9.png" width="70%" />
 
-<img src="https://image.lceda.cn/oshwhub/pullImage/559848290bf94fb4a4774954b60e1936.png" width="70%">
+<img src="https://image.lceda.cn/oshwhub/pullImage/559848290bf94fb4a4774954b60e1936.png" width="70%" />
 
 <div style="background-color:#e6f7ff;padding:20px;border-radius:8px">
     <ul>
@@ -260,7 +260,7 @@ PocketServo_V0.1/
 6. [【星火计划】PocketServo EtherCAT总线功能介绍](https://www.bilibili.com/video/BV11kJxzEEJc/?share_source=copy_web&vd_source=4ee7262585fd8c76ac279a555c7b3054)
 
 ## 💎 致谢名单
-硬件设计参考：[基于STM32G4的FOC电机驱动学习板](https://oshwhub.com/lylssy/foc_driver) 感谢苏工开源！
-感谢[有幸遇到娇宝宝](https://space.bilibili.com/687076795) 大佬的FOC视频教程
-感谢 电磁诡力★FOC交流群 群友们的耐心解答
+硬件设计参考：[基于STM32G4的FOC电机驱动学习板](https://oshwhub.com/lylssy/foc_driver) 感谢苏工开源！<br />
+感谢[有幸遇到娇宝宝](https://space.bilibili.com/687076795) 大佬的FOC视频教程<br />
+感谢 电磁诡力★FOC交流群 群友们的耐心解答<br />
 感谢 [立创开源硬件平台-星火计划](https://oshwhub.com/activities/spark2025?tab=2) 提供的元件和PCB打印券
